@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		E9D096732A2F95AC00C0891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D096722A2F95AC00C0891F /* AppDelegate.swift */; };
 		E9D096752A2F95AC00C0891F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D096742A2F95AC00C0891F /* SceneDelegate.swift */; };
-		E9D096772A2F95AC00C0891F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D096762A2F95AC00C0891F /* ViewController.swift */; };
+		E9D096772A2F95AC00C0891F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D096762A2F95AC00C0891F /* LoginViewController.swift */; };
 		E9D0967A2A2F95AC00C0891F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D096782A2F95AC00C0891F /* Main.storyboard */; };
 		E9D0967D2A2F95AC00C0891F /* HomeWorkAboutMeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9D0967B2A2F95AC00C0891F /* HomeWorkAboutMeApp.xcdatamodeld */; };
 		E9D0967F2A2F95AD00C0891F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D0967E2A2F95AD00C0891F /* Assets.xcassets */; };
 		E9D096822A2F95AD00C0891F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D096802A2F95AD00C0891F /* LaunchScreen.storyboard */; };
+		E9D0968A2A2F966100C0891F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D096892A2F966100C0891F /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9D0966F2A2F95AC00C0891F /* HomeWorkAboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkAboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D096722A2F95AC00C0891F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9D096742A2F95AC00C0891F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9D096762A2F95AC00C0891F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9D096762A2F95AC00C0891F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9D096792A2F95AC00C0891F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9D0967C2A2F95AC00C0891F /* HomeWorkAboutMeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeWorkAboutMeApp.xcdatamodel; sourceTree = "<group>"; };
 		E9D0967E2A2F95AD00C0891F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9D096812A2F95AD00C0891F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9D096832A2F95AD00C0891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D096892A2F966100C0891F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 			children = (
 				E9D096722A2F95AC00C0891F /* AppDelegate.swift */,
 				E9D096742A2F95AC00C0891F /* SceneDelegate.swift */,
-				E9D096762A2F95AC00C0891F /* ViewController.swift */,
+				E9D096762A2F95AC00C0891F /* LoginViewController.swift */,
+				E9D096892A2F966100C0891F /* WelcomeViewController.swift */,
 				E9D096782A2F95AC00C0891F /* Main.storyboard */,
 				E9D0967E2A2F95AD00C0891F /* Assets.xcassets */,
 				E9D096802A2F95AD00C0891F /* LaunchScreen.storyboard */,
@@ -141,7 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9D096772A2F95AC00C0891F /* ViewController.swift in Sources */,
+				E9D096772A2F95AC00C0891F /* LoginViewController.swift in Sources */,
+				E9D0968A2A2F966100C0891F /* WelcomeViewController.swift in Sources */,
 				E9D0967D2A2F95AC00C0891F /* HomeWorkAboutMeApp.xcdatamodeld in Sources */,
 				E9D096732A2F95AC00C0891F /* AppDelegate.swift in Sources */,
 				E9D096752A2F95AC00C0891F /* SceneDelegate.swift in Sources */,
@@ -299,6 +303,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +311,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = TheGoodTheBadTheJun.HomeWorkAboutMeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -327,6 +335,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = TheGoodTheBadTheJun.HomeWorkAboutMeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
