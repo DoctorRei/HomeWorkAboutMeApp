@@ -32,10 +32,12 @@ class LoginViewController: UIViewController {
         let userCheckLogin = textFieldUserLogin.text
         let userCheckPassword = textFieldUserPassword.text
         
-        if userCheckLogin == UserFirst().userName || userCheckPassword == UserFirst().userPassword {
+        if userCheckLogin == UserFirst().userName && userCheckPassword == UserFirst().userPassword {
             presentAlert(withTitle: "Nice", message: "Next step!")
+        
         } else {
             presentAlert(withTitle: "Sorry", message: "Your login or password is wrong")
+//            textFieldUserPassword.text = ""
         }
     }
     
@@ -52,11 +54,13 @@ class LoginViewController: UIViewController {
 
 // MARK: Extension
 
-extension UIViewController {
+extension LoginViewController {
     
     func presentAlert(withTitle title: String, message : String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.textFieldUserPassword.text = ""
+        }
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
     }
