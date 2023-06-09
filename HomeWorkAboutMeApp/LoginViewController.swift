@@ -9,7 +9,7 @@ import UIKit
 
 struct UserFirst {
     let userName = "User"
-    let userPassword = 123321
+    let userPassword = "123321"
 }
 
 class LoginViewController: UIViewController {
@@ -25,12 +25,18 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     // MARK: IBActions
     @IBAction func userLoginWillBeTapped() {
+        let userCheckLogin = textFieldUserLogin.text
+        let userCheckPassword = textFieldUserPassword.text
         
+        if userCheckLogin == UserFirst().userName || userCheckPassword == UserFirst().userPassword {
+            presentAlert(withTitle: "Nice", message: "Next step!")
+        } else {
+            presentAlert(withTitle: "Sorry", message: "Your login or password is wrong")
+        }
     }
     
     @IBAction func userForgotLoginWillBeTapped() {
