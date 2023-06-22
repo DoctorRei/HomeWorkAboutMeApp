@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 class LoginViewController: UIViewController {
     
     //MARK: IBOutlets
@@ -16,6 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var textFieldUserLogin: UITextField!
     @IBOutlet var textFieldUserPassword: UITextField!
     
+    //MARK: Segue Settings & Hide Keyboard
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -25,6 +24,10 @@ class LoginViewController: UIViewController {
         welcomeVC.userName = textFieldUserLogin.text ?? ""
         // Делаем лейбл, а не текстфилд
         return
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     // MARK: IBActions
@@ -65,10 +68,16 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     
     func presentAlert(withTitle title: String, message : String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let alertController = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert)
+        
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             self.textFieldUserPassword.text = ""
         }
+        
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
     }
