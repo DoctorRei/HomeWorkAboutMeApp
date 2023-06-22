@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-8a-fyU">
-                                <rect key="frame" x="163" y="264" width="66" height="44"/>
+                                <rect key="frame" x="120" y="264" width="153" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Login"/>
@@ -32,28 +32,28 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CiV-RI-F8s">
                                         <rect key="frame" x="0.0" y="0.0" width="324" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G89-5Y-J4e">
                                         <rect key="frame" x="0.0" y="42" width="324" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" smartInsertDeleteType="no" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mcV-LR-rC4">
-                                <rect key="frame" x="72" y="343" width="248" height="30"/>
+                                <rect key="frame" x="40" y="343" width="313" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keD-Un-zYg">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keD-Un-zYg">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Forgot name?"/>
                                         <connections>
                                             <action selector="userForgotLoginWillBeTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="QLn-6u-2B8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DS9-aT-nY3">
-                                        <rect key="frame" x="125" y="0.0" width="123" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DS9-aT-nY3">
+                                        <rect key="frame" x="190" y="0.0" width="123" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Forgot password?"/>
                                         <connections>
@@ -68,12 +68,12 @@
                         <constraints>
                             <constraint firstItem="fNM-s1-3Dn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="2Y1-sl-fnQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fNM-s1-3Dn" secondAttribute="trailing" constant="30" id="61E-Kw-y6B"/>
-                            <constraint firstItem="mcV-LR-rC4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="7S4-iF-D4M"/>
                             <constraint firstItem="aYL-8a-fyU" firstAttribute="top" secondItem="fNM-s1-3Dn" secondAttribute="bottom" constant="39" id="WmL-YS-t6z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mcV-LR-rC4" secondAttribute="trailing" constant="73" id="bYA-yN-cNA"/>
+                            <constraint firstItem="mcV-LR-rC4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="dB9-kF-oEc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aYL-8a-fyU" secondAttribute="trailing" constant="120" id="dqR-xk-IHg"/>
+                            <constraint firstItem="aYL-8a-fyU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="hGs-eB-MeO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mcV-LR-rC4" secondAttribute="trailing" constant="40" id="jsv-V7-0CQ"/>
                             <constraint firstItem="mcV-LR-rC4" firstAttribute="top" secondItem="aYL-8a-fyU" secondAttribute="bottom" constant="35" id="viz-ti-geK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aYL-8a-fyU" secondAttribute="trailing" constant="164" id="wgy-DX-X9X"/>
-                            <constraint firstItem="aYL-8a-fyU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="163" id="xDf-Pk-Kc2"/>
                             <constraint firstItem="fNM-s1-3Dn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="zYH-XQ-f6Z"/>
                         </constraints>
                     </view>
