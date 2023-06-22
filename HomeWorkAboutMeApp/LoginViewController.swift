@@ -12,16 +12,17 @@ import UIKit
 class LoginViewController: UIViewController {
     
     //MARK: IBOutlets
-    @IBOutlet var buttonLogin:  UIButton!
-    @IBOutlet var buttonForgotUser: UIButton!
-    @IBOutlet var buttonForgotPassword: UIButton!
     
     @IBOutlet var textFieldUserLogin: UITextField!
     @IBOutlet var textFieldUserPassword: UITextField!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let welcomeVC =
+                segue.destination as? WelcomeViewController else { return } // здесь проверяем, что экран на который мы переходим ис WelcomeViewController
+        welcomeVC.userName = textFieldUserLogin.text ?? "" // lелаем лейбл, а не текстфилд
+        return
     }
     
     // MARK: IBActions
@@ -30,11 +31,9 @@ class LoginViewController: UIViewController {
         let userCheckPassword = textFieldUserPassword.text
         
         if userCheckLogin == UserFirst.userName && userCheckPassword == UserFirst.userPassword {
-            presentAlert(withTitle: "Nice", message: "Next step!")
-            
+            performSegue(withIdentifier: "showWelcomeVC", sender: nil)
         } else {
             presentAlert(withTitle: "Sorry", message: "Your login or password is wrong")
-            
         }
     }
     
