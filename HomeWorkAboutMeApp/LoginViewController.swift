@@ -22,12 +22,12 @@ class LoginViewController: UIViewController {
                 segue.destination as? WelcomeViewController else { return }
         // здесь проверяем, что экран на который мы переходим ис WelcomeViewController
         welcomeVC.userName = textFieldUserLogin.text ?? ""
-        // Делаем лейбл, а не текстфилд
         return
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     // MARK: IBActions
