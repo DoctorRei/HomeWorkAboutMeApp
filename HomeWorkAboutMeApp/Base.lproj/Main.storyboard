@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-8a-fyU">
-                                <rect key="frame" x="163" y="205" width="66" height="44"/>
+                                <rect key="frame" x="163" y="264" width="66" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Login"/>
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fNM-s1-3Dn">
-                                <rect key="frame" x="39" y="90" width="324" height="76"/>
+                                <rect key="frame" x="39" y="149" width="324" height="76"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CiV-RI-F8s">
                                         <rect key="frame" x="0.0" y="0.0" width="324" height="34"/>
@@ -42,7 +42,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mcV-LR-rC4">
-                                <rect key="frame" x="72" y="284" width="248" height="30"/>
+                                <rect key="frame" x="72" y="343" width="248" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keD-Un-zYg">
                                         <rect key="frame" x="0.0" y="0.0" width="95" height="30"/>
@@ -102,8 +102,7 @@
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="logOutPressed" destination="7Ma-Fx-KRA" eventType="touchUpInside" id="03V-Oy-44j"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="ShowLoginScreen" modalPresentationStyle="fullScreen" id="9bl-7l-kXD"/>
+                                    <segue destination="19q-Cc-qbc" kind="unwind" unwindAction="unwindToLoginWithUnwindSegue:" id="0b4-aw-mAH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evU-gU-yMW">
@@ -128,6 +127,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TO2-NJ-R4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="19q-Cc-qbc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1102" y="-35"/>
         </scene>
