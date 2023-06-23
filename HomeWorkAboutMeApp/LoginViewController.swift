@@ -35,8 +35,8 @@ class LoginViewController: UIViewController {
         let userCheckLogin = textFieldUserLogin.text
         let userCheckPassword = textFieldUserPassword.text
         
-        if userCheckLogin == UserFirst.userName &&
-            userCheckPassword == UserFirst.userPassword {
+        if userCheckLogin == User.userName &&
+            userCheckPassword == User.userPassword {
             performSegue(withIdentifier: "showWelcomeVC", sender: nil)
         } else {
             presentAlert(withTitle: "Sorry",
