@@ -8,6 +8,6 @@
 import Foundation
 
 struct User {
-    static let userName = "User"
-    static let userPassword = "123321"
+    var userName = "User"
+    var userPassword = "123321"
 }
