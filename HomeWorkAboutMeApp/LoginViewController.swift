@@ -13,14 +13,14 @@ class LoginViewController: UIViewController {
     
     @IBOutlet var textFieldUserLogin: UITextField!
     @IBOutlet var textFieldUserPassword: UITextField!
+    
     let userFirst = User()
     
     //MARK: Segue Settings & Hide Keyboard
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        guard let welcomeVC =
-                segue.destination as? WelcomeViewController else { return }
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.userName = textFieldUserLogin.text ?? ""
         return
     }

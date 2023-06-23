@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9341D5C2A45F55B00C52178 /* BiographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9341D5B2A45F55B00C52178 /* BiographyViewController.swift */; };
 		E9CD99552A333DCA0026ECD2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD99542A333DCA0026ECD2 /* User.swift */; };
 		E9D096732A2F95AC00C0891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D096722A2F95AC00C0891F /* AppDelegate.swift */; };
 		E9D096752A2F95AC00C0891F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D096742A2F95AC00C0891F /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9341D5B2A45F55B00C52178 /* BiographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyViewController.swift; sourceTree = "<group>"; };
 		E9CD99542A333DCA0026ECD2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E9D0966F2A2F95AC00C0891F /* HomeWorkAboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkAboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D096722A2F95AC00C0891F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				E9CD99542A333DCA0026ECD2 /* User.swift */,
 				E9D096892A2F966100C0891F /* WelcomeViewController.swift */,
 				E9D096782A2F95AC00C0891F /* Main.storyboard */,
+				E9341D5B2A45F55B00C52178 /* BiographyViewController.swift */,
 				E9D0967E2A2F95AD00C0891F /* Assets.xcassets */,
 				E9D096802A2F95AD00C0891F /* LaunchScreen.storyboard */,
 				E9D096832A2F95AD00C0891F /* Info.plist */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9341D5C2A45F55B00C52178 /* BiographyViewController.swift in Sources */,
 				E9D096772A2F95AC00C0891F /* LoginViewController.swift in Sources */,
 				E9D0968A2A2F966100C0891F /* WelcomeViewController.swift in Sources */,
 				E9CD99552A333DCA0026ECD2 /* User.swift in Sources */,
