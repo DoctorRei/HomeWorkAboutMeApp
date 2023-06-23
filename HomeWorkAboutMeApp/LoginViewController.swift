@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet var textFieldUserLogin: UITextField!
     @IBOutlet var textFieldUserPassword: UITextField!
+    let userFirst = User()
     
     //MARK: Segue Settings & Hide Keyboard
     
@@ -34,8 +35,8 @@ class LoginViewController: UIViewController {
         let userCheckLogin = textFieldUserLogin.text
         let userCheckPassword = textFieldUserPassword.text
         
-        if userCheckLogin == User().userName &&
-            userCheckPassword == User().userPassword {
+        if userCheckLogin == userFirst.userName &&
+            userCheckPassword == userFirst.userPassword {
             performSegue(withIdentifier: "showWelcomeVC", sender: nil)
         } else {
             presentAlert(withTitle: "Sorry",
@@ -45,12 +46,12 @@ class LoginViewController: UIViewController {
     
     @IBAction func userForgotLoginWillBeTapped() {
         presentAlert(withTitle: "C'mon!",
-                     message: "Your user name is *User*")
+                     message: "Your user name is \(userFirst.userName)")
     }
     
     @IBAction func userForgotPasswordWillBeTapped() {
         presentAlert(withTitle: "C'mon!",
-                     message: "Your password is *123321*")
+                     message: "Your password is \(userFirst.userPassword)")
     }
     
     @IBAction func unwindToLogin( unwindSegue: UIStoryboardSegue) {
