@@ -9,5 +9,11 @@ import UIKit
 
 class BiographyViewController: UIViewController {
 
- 
+    var labelTextTest = ""
+    @IBOutlet var biographyLabelField: UILabel!
+    
+    override func viewDidLoad() {
+        biographyLabelField.text = labelTextTest
+    }
+    
 }

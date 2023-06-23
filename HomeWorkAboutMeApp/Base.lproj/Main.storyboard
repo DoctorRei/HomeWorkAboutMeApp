@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-63" y="-35"/>
+            <point key="canvasLocation" x="278" y="-36"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="ccc-Vb-Cyk">
@@ -122,7 +122,7 @@
                             <constraint firstItem="evU-gU-yMW" firstAttribute="centerX" secondItem="bQQ-Du-qls" secondAttribute="centerX" id="ro1-O7-M7F"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Welcome" id="nmG-pI-OD4"/>
+                    <tabBarItem key="tabBarItem" title="Welcome" image="smiley" catalog="system" id="nmG-pI-OD4"/>
                     <connections>
                         <outlet property="labelGreetings" destination="evU-gU-yMW" id="erk-1G-Nzy"/>
                     </connections>
@@ -135,14 +135,29 @@
         <!--Biography-->
         <scene sceneID="PXG-rY-qJU">
             <objects>
-                <viewController id="orz-OZ-UDW" sceneMemberID="viewController">
+                <viewController id="orz-OZ-UDW" customClass="BiographyViewController" customModule="HomeWorkAboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uoT-RT-rNL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbH-cK-85g">
+                                <rect key="frame" x="155" y="316" width="65" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="h4t-GJ-uyU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nbH-cK-85g" firstAttribute="centerX" secondItem="uoT-RT-rNL" secondAttribute="centerX" id="VOb-6Y-daz"/>
+                            <constraint firstItem="nbH-cK-85g" firstAttribute="centerY" secondItem="uoT-RT-rNL" secondAttribute="centerY" id="xH1-s6-gRv"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Biography" id="c7t-DD-ixv"/>
+                    <tabBarItem key="tabBarItem" title="Biography" image="smiley" catalog="system" id="c7t-DD-ixv"/>
+                    <connections>
+                        <outlet property="biographyLabelField" destination="nbH-cK-85g" id="HYf-Vz-jWw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8o-ML-WSX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,6 +169,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dQ6-qm-NYi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y70-TO-Bgw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -168,6 +184,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="smiley" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
