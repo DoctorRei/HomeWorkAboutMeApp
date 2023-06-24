@@ -10,10 +10,11 @@ import UIKit
 class BiographyViewController: UIViewController {
 
     var labelTextTest = ""
+    var someText = ""
     @IBOutlet var biographyLabelField: UILabel!
     
     override func viewDidLoad() {
-        biographyLabelField.text = labelTextTest
+        biographyLabelField.text = labelTextTest + "hi"
     }
     
 }

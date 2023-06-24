@@ -26,45 +26,52 @@ class LoginViewController: UIViewController {
         viewControllers.forEach { ViewController in
             if let firstVC = ViewController as? WelcomeViewController {
                 firstVC.userName = userFirst.userRealName
-            } else if let seccondVC = ViewController as? BiographyViewController {
-                seccondVC.labelTextTest = userFirst.userName
+            } else if let seccondVC = ViewController as? UINavigationController {
+                seccondVC.viewControllers.forEach { viewConroller in
+                    if let biographyVC = viewConroller as? BiographyViewController {
+                        biographyVC.labelTextTest = "Hello pls do it"
+                    }
+                }
             }
         }
-    }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
+    print(viewControllers)
     
-    // MARK: IBActions
-    @IBAction func userLoginWillBeTapped() {
-        let userCheckLogin = textFieldUserLogin.text
-        let userCheckPassword = textFieldUserPassword.text
-        
-        if userCheckLogin == userFirst.userName &&
-            userCheckPassword == userFirst.userPassword {
-            performSegue(withIdentifier: "showWelcomeVC", sender: nil)
-        } else {
-            presentAlert(withTitle: "Sorry",
-                         message: "Your login or password is wrong")
-        }
-    }
+}
+
+override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesBegan(touches, with: event)
+    view.endEditing(true)
+}
+
+// MARK: IBActions
+@IBAction func userLoginWillBeTapped() {
+    let userCheckLogin = textFieldUserLogin.text
+    let userCheckPassword = textFieldUserPassword.text
     
-    @IBAction func userForgotLoginWillBeTapped() {
-        presentAlert(withTitle: "C'mon!",
-                     message: "Your user name is \(userFirst.userName)")
+    if userCheckLogin == userFirst.userName &&
+        userCheckPassword == userFirst.userPassword {
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
+    } else {
+        presentAlert(withTitle: "Sorry",
+                     message: "Your login or password is wrong")
     }
-    
-    @IBAction func userForgotPasswordWillBeTapped() {
-        presentAlert(withTitle: "C'mon!",
-                     message: "Your password is \(userFirst.userPassword)")
-    }
-    
-    @IBAction func unwindToLogin( unwindSegue: UIStoryboardSegue) {
-        textFieldUserLogin.text = ""
-        textFieldUserPassword.text = ""
-    }
+}
+
+@IBAction func userForgotLoginWillBeTapped() {
+    presentAlert(withTitle: "C'mon!",
+                 message: "Your user name is \(userFirst.userName)")
+}
+
+@IBAction func userForgotPasswordWillBeTapped() {
+    presentAlert(withTitle: "C'mon!",
+                 message: "Your password is \(userFirst.userPassword)")
+}
+
+@IBAction func unwindToLogin( unwindSegue: UIStoryboardSegue) {
+    textFieldUserLogin.text = ""
+    textFieldUserPassword.text = ""
+}
 }
 
 // MARK: Extension

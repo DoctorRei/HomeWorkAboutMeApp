@@ -130,9 +130,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TO2-NJ-R4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="19q-Cc-qbc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2010" y="-311"/>
+            <point key="canvasLocation" x="2948" y="-311.69415292353824"/>
         </scene>
-        <!--Biography-->
+        <!--Helllo-->
         <scene sceneID="PXG-rY-qJU">
             <objects>
                 <viewController id="orz-OZ-UDW" customClass="BiographyViewController" customModule="HomeWorkAboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -154,14 +154,14 @@
                             <constraint firstItem="nbH-cK-85g" firstAttribute="centerY" secondItem="uoT-RT-rNL" secondAttribute="centerY" id="xH1-s6-gRv"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Biography" image="smiley" catalog="system" id="c7t-DD-ixv"/>
+                    <navigationItem key="navigationItem" title="Helllo" id="IHK-Ty-ohq"/>
                     <connections>
                         <outlet property="biographyLabelField" destination="nbH-cK-85g" id="HYf-Vz-jWw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8o-ML-WSX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2009" y="342"/>
+            <point key="canvasLocation" x="2948" y="341.37931034482762"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bX1-60-Cf9">
@@ -175,12 +175,31 @@
                     </tabBar>
                     <connections>
                         <segue destination="7Ma-Fx-KRA" kind="relationship" relationship="viewControllers" id="HHN-iq-PFW"/>
-                        <segue destination="orz-OZ-UDW" kind="relationship" relationship="viewControllers" id="ece-Tv-6iz"/>
+                        <segue destination="e9A-ev-SYy" kind="relationship" relationship="viewControllers" id="ece-Tv-6iz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdh-ho-9eu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1101.5267175572519" y="-35.211267605633807"/>
+        </scene>
+        <!--Biography-->
+        <scene sceneID="81r-ZM-lCy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9A-ev-SYy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Biography" image="smiley" catalog="system" id="c7t-DD-ixv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="A7m-j8-Asm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="orz-OZ-UDW" kind="relationship" relationship="rootViewController" id="Zp0-CF-czW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vX-Tl-BiB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2073" y="341"/>
         </scene>
     </scenes>
     <resources>
