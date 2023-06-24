@@ -20,16 +20,14 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-//        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-//        welcomeVC.userName = textFieldUserLogin.text ?? ""
-//        return
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarVC.viewControllers else { return }
+        
         viewControllers.forEach { ViewController in
             if let firstVC = ViewController as? WelcomeViewController {
-                firstVC.userName = textFieldUserLogin.text ?? ""
+                firstVC.userName = userFirst.userRealName
             } else if let seccondVC = ViewController as? BiographyViewController {
-                seccondVC.labelTextTest = textFieldUserPassword.text ?? ""
+                seccondVC.labelTextTest = userFirst.userName
             }
         }
     }
