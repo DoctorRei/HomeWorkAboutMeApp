@@ -14,8 +14,6 @@ class LoginViewController: UIViewController {
     @IBOutlet var textFieldUserLogin: UITextField!
     @IBOutlet var textFieldUserPassword: UITextField!
     
-    let userFirst = User()
-    
     //MARK: Segue Settings & Hide Keyboard
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -23,13 +21,17 @@ class LoginViewController: UIViewController {
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarVC.viewControllers else { return }
         
+        print(viewControllers)
+        
         viewControllers.forEach { ViewController in
             if let firstVC = ViewController as? WelcomeViewController {
                 firstVC.userName = userFirst.userRealName
+                firstVC.view.backgroundColor = .systemPink
             } else if let seccondVC = ViewController as? UINavigationController {
                 seccondVC.viewControllers.forEach { viewConroller in
                     if let biographyVC = viewConroller as? BiographyViewController {
-                        biographyVC.labelTextTest = "Hello pls do it"
+                        biographyVC.labelTextTest += userFirst.age
+                        
                     }
                 }
             }
@@ -72,6 +74,7 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     textFieldUserLogin.text = ""
     textFieldUserPassword.text = ""
 }
+    
 }
 
 // MARK: Extension

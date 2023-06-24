@@ -13,8 +13,9 @@ class BiographyViewController: UIViewController {
     var someText = ""
     @IBOutlet var biographyLabelField: UILabel!
     
+    
     override func viewDidLoad() {
-        biographyLabelField.text = labelTextTest + "hi"
+        biographyLabelField.text = labelTextTest 
     }
     
 }
