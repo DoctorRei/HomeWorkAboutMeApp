@@ -13,8 +13,7 @@ class BiographyFullViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fullBiographyLabel.text = userFirst.biographyFull
-        
+        fullBiographyLabel.text = userFirst.biographyFull       
 
        
     }
