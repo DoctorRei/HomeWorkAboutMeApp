@@ -30,7 +30,8 @@ class LoginViewController: UIViewController {
             } else if let seccondVC = ViewController as? UINavigationController {
                 seccondVC.viewControllers.forEach { viewConroller in
                     if let biographyVC = viewConroller as? BiographyViewController {
-                        biographyVC.labelTextTest += userFirst.age
+                        biographyVC.labelTextTest = "Возраст" + userFirst.age
+                        
                         
                     }
                 }

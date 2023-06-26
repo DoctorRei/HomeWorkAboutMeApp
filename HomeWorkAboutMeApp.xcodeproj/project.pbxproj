@@ -47,6 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E99C33D92A499E88003AB29E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E9D096722A2F95AC00C0891F /* AppDelegate.swift */,
+				E9D096742A2F95AC00C0891F /* SceneDelegate.swift */,
+				E9D0967E2A2F95AD00C0891F /* Assets.xcassets */,
+				E9D096832A2F95AD00C0891F /* Info.plist */,
+				E9D0967B2A2F95AC00C0891F /* HomeWorkAboutMeApp.xcdatamodeld */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		E9D096662A2F95AC00C0891F = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +78,14 @@
 		E9D096712A2F95AC00C0891F /* HomeWorkAboutMeApp */ = {
 			isa = PBXGroup;
 			children = (
-				E9D096722A2F95AC00C0891F /* AppDelegate.swift */,
-				E9D096742A2F95AC00C0891F /* SceneDelegate.swift */,
+				E99C33D92A499E88003AB29E /* App */,
 				E9D096762A2F95AC00C0891F /* LoginViewController.swift */,
 				E99C6A6A2A470E1C00EA8B9C /* SettingsBiographyVC.swift */,
 				E9D096892A2F966100C0891F /* WelcomeViewController.swift */,
 				E9341D5B2A45F55B00C52178 /* BiographyViewController.swift */,
 				E9CD99542A333DCA0026ECD2 /* User.swift */,
 				E9D096782A2F95AC00C0891F /* Main.storyboard */,
-				E9D0967E2A2F95AD00C0891F /* Assets.xcassets */,
 				E9D096802A2F95AD00C0891F /* LaunchScreen.storyboard */,
-				E9D096832A2F95AD00C0891F /* Info.plist */,
-				E9D0967B2A2F95AC00C0891F /* HomeWorkAboutMeApp.xcdatamodeld */,
 			);
 			path = HomeWorkAboutMeApp;
 			sourceTree = "<group>";
@@ -309,7 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4JT48W22P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWorkAboutMeApp/Info.plist;
+				INFOPLIST_FILE = HomeWorkAboutMeApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -341,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4JT48W22P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWorkAboutMeApp/Info.plist;
+				INFOPLIST_FILE = HomeWorkAboutMeApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

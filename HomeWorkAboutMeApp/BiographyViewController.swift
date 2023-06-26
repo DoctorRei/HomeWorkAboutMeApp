@@ -10,7 +10,8 @@ import UIKit
 class BiographyViewController: UIViewController {
 
     var labelTextTest = ""
-    var someText = ""
+    var age = ""
+    var gender = ""
     @IBOutlet var biographyLabelField: UILabel!
     
     
