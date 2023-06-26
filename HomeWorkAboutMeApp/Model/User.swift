@@ -19,6 +19,11 @@ struct User {
     var post = "Промолчу. Это грустно"
     var myOpinion = "Чертовски хорош"
     var parentsOpinion = "Позорище"
+    var biographyFull = "Итак. Давайте в последний раз. Меня зовут Михаил Кутузов,  "
 }
 
-let userFirst = User()
+var userFirst = User()
+
+
+
+

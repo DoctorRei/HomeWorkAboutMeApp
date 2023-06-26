@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E9341D5C2A45F55B00C52178 /* BiographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9341D5B2A45F55B00C52178 /* BiographyViewController.swift */; };
+		E99C33DE2A49B11F003AB29E /* BiographyFullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C33DD2A49B11F003AB29E /* BiographyFullViewController.swift */; };
 		E99C6A6B2A470E1C00EA8B9C /* SettingsBiographyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C6A6A2A470E1C00EA8B9C /* SettingsBiographyVC.swift */; };
 		E9CD99552A333DCA0026ECD2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD99542A333DCA0026ECD2 /* User.swift */; };
 		E9D096732A2F95AC00C0891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D096722A2F95AC00C0891F /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		E9341D5B2A45F55B00C52178 /* BiographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyViewController.swift; sourceTree = "<group>"; };
+		E99C33DD2A49B11F003AB29E /* BiographyFullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyFullViewController.swift; sourceTree = "<group>"; };
 		E99C6A6A2A470E1C00EA8B9C /* SettingsBiographyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBiographyVC.swift; sourceTree = "<group>"; };
 		E9CD99542A333DCA0026ECD2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E9D0966F2A2F95AC00C0891F /* HomeWorkAboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkAboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +67,7 @@
 				E99C6A6A2A470E1C00EA8B9C /* SettingsBiographyVC.swift */,
 				E9D096892A2F966100C0891F /* WelcomeViewController.swift */,
 				E9341D5B2A45F55B00C52178 /* BiographyViewController.swift */,
+				E99C33DD2A49B11F003AB29E /* BiographyFullViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				E9CD99552A333DCA0026ECD2 /* User.swift in Sources */,
 				E9D0967D2A2F95AC00C0891F /* HomeWorkAboutMeApp.xcdatamodeld in Sources */,
 				E9D096732A2F95AC00C0891F /* AppDelegate.swift in Sources */,
+				E99C33DE2A49B11F003AB29E /* BiographyFullViewController.swift in Sources */,
 				E9D096752A2F95AC00C0891F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
