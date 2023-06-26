@@ -11,11 +11,12 @@ struct User {
     var userName = "DoctorRei"
     var userPassword = "123321"
     var userRealName = "Михаил"
+    var userClan = "Кутузов"
     
     var age = "25"
     var gender = "Мужчина"
     var company = "Севстар"
-    var post = "Давайте не будем об этом"
+    var post = "Промолчу. Это грустно"
     var myOpinion = "Чертовски хорош"
     var parentsOpinion = "Позорище"
 }

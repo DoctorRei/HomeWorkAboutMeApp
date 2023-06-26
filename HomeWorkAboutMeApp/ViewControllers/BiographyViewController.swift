@@ -9,9 +9,7 @@ import UIKit
 
 class BiographyViewController: UIViewController {
 
-    var labelTextTest = ""
-    var age = ""
-    var gender = ""
+    
    
     @IBOutlet var biographyLabelFieldAge: UILabel!
     @IBOutlet var biographyLabelFieldGender: UILabel!
@@ -23,7 +21,12 @@ class BiographyViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        biographyLabelFieldAge.text = labelTextTest 
+        biographyLabelFieldAge.text = userFirst.age
+        biographyLabelFieldGender.text = userFirst.gender
+        biographyLabelFieldCompany.text = userFirst.company
+        biographyLabelFieldPost.text = userFirst.post
+        biographyLabelFieldMyOpinion.text = userFirst.myOpinion
+        biographyLabelFieldParentsOpinion.text = userFirst.parentsOpinion
     }
     
     

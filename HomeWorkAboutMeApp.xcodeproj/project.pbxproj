@@ -52,7 +52,6 @@
 			children = (
 				E9D096722A2F95AC00C0891F /* AppDelegate.swift */,
 				E9D096742A2F95AC00C0891F /* SceneDelegate.swift */,
-				E9D0967E2A2F95AD00C0891F /* Assets.xcassets */,
 				E9D096832A2F95AD00C0891F /* Info.plist */,
 				E9D0967B2A2F95AC00C0891F /* HomeWorkAboutMeApp.xcdatamodeld */,
 			);
@@ -78,9 +77,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E99C33DC2A49A609003AB29E /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				E9D096782A2F95AC00C0891F /* Main.storyboard */,
+				E9D096802A2F95AD00C0891F /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
 		E9D096662A2F95AC00C0891F = {
 			isa = PBXGroup;
 			children = (
+				E9D0967E2A2F95AD00C0891F /* Assets.xcassets */,
 				E9D096712A2F95AC00C0891F /* HomeWorkAboutMeApp */,
 				E9D096702A2F95AC00C0891F /* Products */,
 			);
@@ -100,8 +109,7 @@
 				E99C33D92A499E88003AB29E /* App */,
 				E99C33DA2A49A3B6003AB29E /* ViewControllers */,
 				E99C33DB2A49A3C6003AB29E /* Model */,
-				E9D096782A2F95AC00C0891F /* Main.storyboard */,
-				E9D096802A2F95AD00C0891F /* LaunchScreen.storyboard */,
+				E99C33DC2A49A609003AB29E /* StoryBoards */,
 			);
 			path = HomeWorkAboutMeApp;
 			sourceTree = "<group>";
